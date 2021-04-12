@@ -5,7 +5,7 @@ import java.util.List;
  *	Arithmetic expression utilities
  *	o Methods to tokenize an arithmetic expression.
  *
- *	@author	Mr Greenstein
+ *	@author	Mr Greenstein fuasgdjfkaghekfla
  *	@since	March 18, 2020
  *
  */
