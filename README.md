@@ -182,7 +182,6 @@ Command
 
 Response
 
-    ZCN wallet created
     Wallet registered
 
 ### Create new allocation
@@ -393,10 +392,10 @@ Response contains auth token an encrypted string that can be shared.
 
 Use list command to list files in given path. By using help for this command, you will see it takes parameters:
 
-- --allocation string --Allocation ID
-- --remotepath string --Remote path to list from (Required for --allocation)
-- --authticket string --Auth ticket fot the file to download if you dont own it
-- --lookuphash string --The remote lookuphash of the object retrieved from the list
+- --allocation string Allocation ID
+- --remotepath string Remote path to list from (Required for --allocation)
+- --authticket string Auth ticket fot the file to download if you dont own it
+- --lookuphash string The remote lookuphash of the object retrieved from the list
 
 Command
 
