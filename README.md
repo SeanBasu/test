@@ -2,10 +2,6 @@
 
 zbox is a command line interface (CLI) tool to understand the capabilities of 0Chain dStorage and prototype your app. The utility is built using 0Chain's goSDK library written in Go. Check out a [video](https://youtu.be/TPrkRjdaHrY) on how to use the CLI to create an allocation (storage volume) and upload, download, update, delete, and share files and folders to dStor on the 0Chain dStorage platform.
 
-Adding a line to test git push
-Adding one more line
-Add third line
-
 ## Features
 
 [zbox](#Command-with-no-arguments) supports the following features
@@ -252,7 +248,7 @@ Response
       zbox updateallocation [flags]
 
     Flags:
-          --allocation_id string   allocation ID
+          --allocation string   allocation ID
           --expiry duration        adjust storage expiration time, duration (default 720h)
       -h, --help                   help for updateallocation
           --size int               adjust allocation size, bytes (default 2147483648)
@@ -270,7 +266,7 @@ it will automatically create a wallet.
 
 Command
 
-    ./zbox updateallocation --allocation d0939e912851959637257573b08c748474f0dd0ebbc8e191e4f6ad69e4fdc7ac --size 2147483648
+    ./zbox updateallocation --allocation d0939e912851959637257573b08c748474f0dd0ebbc8e191e4f6ad69e4fdc7ac --flag <flagValue>
 
 Response
 
@@ -291,8 +287,8 @@ Use upload command to upload a file. By using help for this command, you will se
 
 - --allocation -- the allocation id from the newallocation command
 - --localpath -- absolute path to the file on your local system
-- --remote path -- remote path where you want to store. It should start with "/"
-- --thumbnailpath -- Local thumbnail path of file to upload
+- --remote path -- remote path where you want to store, it should start with "/"
+- --thumbnailpath -- local thumbnail path of file to upload
 - --encrypt -- [OPTIONAL] pass this option to encrypt and upload the file
 - --commit -- [OPTIONAL] pass this option to commit the metadata transaction
 - --attr-who-pays-for-reads [OPTIONAL] set payer for downloads; default is 3rd_party,
