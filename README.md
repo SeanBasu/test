@@ -261,7 +261,7 @@ Response
 
 #### Usage
 
-Create a new allocation with default values. If you have not registered a wallet,
+Creates a new allocation with the default values. If you have not registered a wallet,
 it will automatically create a wallet.
 
 Command
@@ -276,8 +276,8 @@ You can see more txn details usin above txID in block explorer.
 
 ### Finalize an expired allocation
 
-Finalize an expired allocation. It makes sure all blobbers has got min_lock_demand,
-unlocks all related pools. Moves tokens from write pool to allocation owner.
+Finalize an expired allocation makes sure all blobbers has got min_lock_demand,
+and unlocks all related pools, also moves the tokens from write pool to allocation owner.
 
      ./zbox finialloc --allocation <allocation_id>
 
