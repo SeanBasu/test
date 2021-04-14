@@ -279,7 +279,7 @@ You can see more txn details usin above txID in block explorer.
 Finalize an expired allocation makes sure all blobbers has got min_lock_demand,
 and unlocks all related pools, also moves the tokens from write pool to allocation owner.
 
-     ./zbox finialloc --allocation <allocation_id>
+     ./zbox finialloc --allocation d0939e912851959637257573b08c748474f0dd0ebbc8e191e4f6ad69e4fdc7ac
 
 ### Upload
 
@@ -490,7 +490,8 @@ Command
 
 Response
 
-Response will give details for current selected wallet (or wallet file specified by optional --wallet parameter)
+Response will give details for current selected wallet (or wallet file specified by optional --wallet parameter), such
+as encryption public key, public key, and clientID.
 
 ### Get
 
