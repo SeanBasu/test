@@ -503,7 +503,7 @@ Command
 
 Response
 
-Response will have information about blobbers allocated and stats for the allocation. Stats contain important information about the size of the allocation, size used, number of write markers, and challenges passed/failed/open/redeemed
+Response will have information about the blobbers that are allocated and stats for the allocation. Stats contain important information about the size of the allocation, size used, number of write markers, and challenges passed/failed/open/redeemed
 
 ### Get metadata
 
@@ -540,7 +540,7 @@ Command
 
 ### Stats
 
-stats command helps in getting upload, download and challenge information on a file.
+The stats command helps in getting upload, download, and challenge information on a file.
 
 Command
 
@@ -548,7 +548,7 @@ Command
 
 ### Repair
 
-Use repair command to repair a file. By using help for this command, you will see it takes parameters:
+Use the repair command to repair a file. By using help for this command, you will see it takes parameters:
 
 - --allocation -- the allocation id from the newallocation command
 - --localpath -- absolute path to the file on your local system
@@ -577,7 +577,7 @@ Command
 
 Response
 
-Response will be a confirmation that collaborator is added on all blobbers for the given file
+Response will be a confirmation that collaborator is added on all blobbers for the given file.
 You can check all collaborators for a file in metadata json response
 
 ### Delete collaborator
@@ -599,8 +599,8 @@ Response will be a confirmation that collaborator is removed on all blobbers for
 
 # Cancel allocation
 
-Cancel allocation immediately and return all tokens from challenge pool
-back to user (to write pool). This case blobber will not give their min
+Cancel allocation will immediately return all tokens from challenge pool
+back to user (to write pool). This way the blobber will not give their min
 lock demand. If blobbers already got some tokens, the tokens will not be
 returned.
 
@@ -610,7 +610,7 @@ It returns tokens to user's write pool, creating one expired if necessary.
 
 # Finalize allocation
 
-Finalize an expired allocation. When allocation expired, after its
+Finalize an expired allocation. When an allocation expired, after its
 challenge completion time (after the expiration) an allocation can be
 finalized by owner or one of allocation blobbers.
 
@@ -754,7 +754,7 @@ finalization will pay the demand an unlock the pool.
 
 How much a remote file downloading.
 
-      ./zbox get-download-cost --allocation ALLOC_ID --remotepath /path/file.ext
+      ./zbox get-download-cost --allocation ALLOCATION_ID --remotepath /path/file.ext
 
 Also, there are `authticket` and `lookuphash` flags to get the cost for
 non allocation owners.
@@ -763,7 +763,7 @@ non allocation owners.
 
 How much a local file uploading.
 
-    ./zbox get-upload-cost --allocation ALLOC_ID --localpath ./path/file.ext
+    ./zbox get-upload-cost --allocation ALLOCATION_ID --localpath ./path/file.ext
 
 # Blobbers
 
